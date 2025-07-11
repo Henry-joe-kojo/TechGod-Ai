@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Search Engine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="ai.css" />
+</head>
+<body>
+  <header>
+    <div class="container" role="banner">
+      <div class="logo" tabindex="0">AI Search</div>
+      <nav role="navigation" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="region" aria-labelledby="hero-heading">
+    <h1 id="hero-heading">Discover Smarter Insights<br/>with AI-Powered Search</h1>
+    <p>Experience fast, relevant search results powered by intelligent algorithms — bringing clarity to your queries.</p>
+    <button class="cta-button" type="button" id="getStartedBtn">Get Started</button>
+  </section>
+
+  <main>
+    <form id="searchForm" role="search" aria-label="AI Search Form" autocomplete="off">
+      <input
+        type="search"
+        id="searchInput"
+        name="searchInput"
+        placeholder="Enter your search query..."
+        aria-label="Search input"
+        required
+        spellcheck="false"
+      />
+      <button type="submit" aria-label="Submit search">Search</button>
+    </form>
+
+    <section id="results" aria-live="polite" aria-relevant="additions" aria-label="Search results">
+      <!-- Search results appear here -->
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
